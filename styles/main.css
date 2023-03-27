@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(22, 21, 21);
+}
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagecarousel {
+    position: relative;
+}
+.image {
+    display: none;
+}
+img {
+    border-radius: 5px;
+
+}
+
+.dots {
+    text-align: center;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.dot {
+    display: block;
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.prev {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+.next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+.prev, .next {
+    position: absolute;
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
+    top: 50%;
+    padding: 1vw;
+    background-color: rgba(186, 186, 186, 0.5);
+    transition: all ease 300ms;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(186, 186, 186, 0.9);
+}
+.active {
+    background-color: rgb(131, 130, 130);
+}
