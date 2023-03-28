@@ -20,13 +20,18 @@ function showImage(i) {
     if(intIndex < 0) {
         intIndex = images.length - 1;
     }
-        
-        
-    // images[intIndex].setAttribute("style", "display: block;");
+
     images[intIndex].style.display = "block";
     dots[intIndex].className += " active";
 
     
 }
+function getCurrentYear() {
+    let d = new Date();
+    document.getElementById('copyright').innerHTML = d.getFullYear();
+}
+window.onload = function() {
+    getCurrentYear();
+    showImage(intIndex);
+}
 
-showImage(intIndex);
