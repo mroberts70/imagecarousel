@@ -34,4 +34,3 @@ window.onload = function() {
     getCurrentYear();
     showImage(intIndex);
 }
-

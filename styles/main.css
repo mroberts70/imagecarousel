@@ -59,7 +59,6 @@ header h2 {
     width: 15px;
     background-color: #bbb;
     border-radius: 50%;
-<<<<<<< Updated upstream
 }
 
 .prev, .next {
@@ -70,8 +69,6 @@ header h2 {
     top: 50%;
     background-color: rgba(186, 186, 186, 0.5);
     transition: all ease 300ms;
-=======
->>>>>>> Stashed changes
 }
 .prev {
     left: 0;
@@ -81,23 +78,7 @@ header h2 {
     right: 0;
     border-radius: 5px 0 0 5px;
 }
-<<<<<<< Updated upstream
 .next i, .prev i {
-    padding: 1vw;
-    cursor: pointer;
-=======
-.prev, .next {
-    position: absolute;
-    color: white;
-    font-size: 200%;
-    font-weight: bold;
-    top: 50%;
-    background-color: rgba(186, 186, 186, 0.5);
-    transition: all ease 300ms;
->>>>>>> Stashed changes
-}
-#prev, #next {
-    /* display: block; */
     padding: 1vw;
     cursor: pointer;
 }
